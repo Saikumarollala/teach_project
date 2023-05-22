@@ -1,0 +1,166 @@
+*{
+    padding: 0px; 
+    margin: 0px;
+}
+body{
+    background-image: url(../asset/image/pexels-timson-foox-2182863.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 400vh;
+    background-attachment: scroll;
+}
+#header{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    /* background-color: blue; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px black;
+}
+#headervid{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    filter: brightness(50%) hue-rotate(180deg);
+}
+#headingtext{
+    position: absolute;
+    font-size: 80px;
+    z-index: 3;
+    letter-spacing: 25px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#robo1{
+    position: absolute;
+    z-index: 3;
+    left: 550px;
+    bottom: 225px;
+    width: 100px;
+    filter: drop-shadow(5px 5px 5px grey);
+}
+#robo2{
+    position: absolute;
+    z-index: 3;
+    right: 450px;
+    bottom: 170px;
+    width: 100px;
+    /* filter: drop-shadow(5px 5px 5px black); */
+}
+#robo3{
+    position: absolute;
+    z-index: 3;
+    left: 750px;
+    bottom: -250px;
+    width: 100px;
+    transition: bottom 0.5s;
+    transition-timing-function: ease-in;
+    filter: drop-shadow(5px 5px 5px black);
+}
+#header:hover #robo3{
+    bottom: -80px;
+}
+#greet{
+    position: relative;
+    z-index: 4;
+    top: 120px;
+    right: 80px;
+    width: 120px;
+    background-color: white;
+    border-radius: 200px;
+    text-align: center;
+    font-size: 24px;
+    filter: opacity(0);
+    transition: filter 0.5s,transform 1s;
+    transition-delay: 0.5s;
+    transform: rotateY(360deg) skewY(30deg);
+}
+#header:hover #greet{
+    filter: opacity(1);
+    transform: rotateY(360deg) skewY(10deg);
+}
+#navbar{
+    width: 100%; 
+    height: 7.5vh;
+    background-color: rgba(0, 0, 0, 0.579);
+}
+#mainlist{
+    list-style: none;
+    display: flex;
+}
+.li{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    height: 2vh;
+    transition: transform 0.5s;
+}
+.li:hover{
+    background-color: rgb(135,235,185);
+    color: black;
+    transform: scaleX(1.2);
+}
+#sublist{
+    list-style: none;
+    display: none;
+}
+#hov:hover #sublist{
+    display: block;
+}
+#hov:hover .sli{
+    color: white;
+}
+.sli{
+    background-color: black;
+    width: 120px;
+    position: relative;
+    right: 20px;
+    top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: translate 0.2s;
+}
+.sli:hover{
+    background-color: rgb(135,235,185);
+    color: black;
+    transform: translateX(20px);
+}
+#hov{
+  width: 80px;
+}
+.video{
+ display: none;
+}
+.sli:hover .video{
+    width: 200px;
+    display: block;
+    position: absolute;
+    left: 100px;
+    padding-left: 50px; 
+}
+#rembody{
+    width: 100%; 
+    height: 350vh;
+}
+#robotics,#aibody,#xr,#vr,#threejs{
+    width: 100%; 
+    height: 60vh;
+    margin-bottom: 50px;
+    background-color: grey;
+    border-bottom: 40px groove rgb(129, 150, 158);
+    border-top: 40px groove rgb(129, 150, 158);
+    box-shadow: 0px 10px 15px black,0px -10px 15px black;
+}
+#footer{
+    width: 100%; 
+    height: 100px;
+    background-color: rgb(97, 109, 114);
+    position: absolute;
+    top: 450vh;
+    text-align: center;
+}
