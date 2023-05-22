@@ -30,7 +30,7 @@ function loginpage(){
 } 
 function visible(){ 
     form[0].elements[1].type="text"; 
-    document.getElementById("passvisible").src="./asset/image/eyeopen.png" 
+    document.getElementById("passvisible").src="/asset/image/closeyes.png" 
 } 
 function invisible(){ 
     form[0].elements[1].type="password"; 
